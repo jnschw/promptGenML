@@ -1,0 +1,9 @@
+scene:
+  location: "schoolroom"
+  time_of_day: "afternoon"
+  weather: "sunny"
+  mood: "focused but friendly"
+  characters: ["Mary", "3 students"]
+  action: "Mary points to a chalkboard with English words"
+  camera: "medium shot"
+  style: "comic, colored pencil"
