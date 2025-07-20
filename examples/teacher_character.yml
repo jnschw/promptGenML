@@ -1,0 +1,22 @@
+character:
+  name: "Mary"
+  role: "English teacher"
+  version: "v1.0"
+  setting:
+    location: "Whitby, England, UK"
+    time: "1982"
+  appearance:
+    hair: "blonde, tied back"
+    eyes: "brown"
+    clothing:
+      hat: "straw hat"
+      top: "beige linen blouse"
+      bottom: "long skirt"
+      footwear: "boots"
+      accessories: ["notebook", "chalk"]
+    color_palette: ["beige", "light brown", "white"]
+  personality: "friendly, clear-speaking"
+  tags: ["school", "northern England", "non-violent"]
+  notes:
+    - "No weapons"
+    - "Reference image: teacher_mary_v1.png"
