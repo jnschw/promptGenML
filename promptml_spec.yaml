@@ -1,0 +1,139 @@
+# promptml_spec.yaml - Specification of the PromptML Format
+
+# Description of the PromptML format
+description: |
+  PromptML is a lightweight, human- and machine-readable format for the structured
+  description of characters, scenes, and context elements for generative AI applications.
+  It is designed to enable repeatable, reproducible, and shareable prompts.
+
+# Version of the specification
+spec_version: "1.0.0"
+
+# Definition of the main sections
+sections:
+  character:
+    description: Defines a single character with their properties.
+    required: false
+    fields:
+      name:
+        type: string
+        description: The name of the character.
+        required: true
+      role:
+        type: string
+        description: The role or profession of the character (e.g., "English teacher", "Hero").
+        required: false
+      version:
+        type: string
+        description: A version number for the character (e.g., "v1.0", "beta-2").
+        required: false
+      license:
+        type: string
+        description: License for the character description or its generated content (e.g., "CC-BY-SA", "Public Domain").
+        required: false
+      setting:
+        type: object
+        description: Contextual details about the character's environment.
+        required: false
+        fields:
+          location:
+            type: string
+            description: Location where the character is or is associated with (e.g., "Western town").
+            required: false
+          time:
+            type: string
+            description: Time period of the character (e.g., "1880", "futuristic").
+            required: false
+      appearance:
+        type: object
+        description: Visual characteristics of the character.
+        required: false
+        fields:
+          hair:
+            type: string
+            description: Description of hair color and style.
+            required: false
+          eyes:
+            type: string
+            description: Description of eye color.
+            required: false
+          clothing:
+            type: object
+            description: Details about the character's clothing.
+            required: false
+            fields:
+              hat: {type: string, description: Description of the hat, required: false}
+              top: {type: string, description: Description of the top, required: false}
+              bottom: {type: string, description: Description of the bottom, required: false}
+              footwear: {type: string, description: Description of the footwear, required: false}
+              accessories:
+                type: array
+                description: List of accessories.
+                items: {type: string}
+                required: false
+          color_palette:
+            type: array
+            description: Recommended color palette (e.g., Hex codes or names).
+            items: {type: string}
+            required: false
+      personality:
+        type: string
+        description: Description of the character's personality or mood.
+        required: false
+      tags:
+        type: array
+        description: Keywords for categorizing the character (e.g., "school", "western", "non-violent").
+        items: {type: string}
+        required: false
+      notes:
+        type: array
+        description: Additional free-form notes or specific instructions for the AI.
+        items: {type: string}
+        required: false
+
+  scene:
+    description: Defines a scene or a specific context.
+    required: false
+    fields:
+      location:
+        type: string
+        description: Location of the scene (e.g., "schoolroom", "rainforest").
+        required: true
+      time_of_day:
+        type: string
+        description: Time of day for the scene (e.g., "afternoon", "dusk").
+        required: false
+      weather:
+        type: string
+        description: Weather conditions in the scene.
+        required: false
+      mood:
+        type: string
+        description: Mood or atmosphere of the scene (e.g., "focused but friendly", "mysterious").
+        required: false
+      characters:
+        type: array
+        description: Names of characters present in this scene (reference to 'character.name').
+        items: {type: string}
+        required: false
+      action:
+        type: string
+        description: The central action or event in the scene.
+        required: true
+      camera:
+        type: string
+        description: Camera angle or shot type (e.g., "medium shot", "wide angle", "close-up").
+        required: false
+      style:
+        type: string
+        description: Artistic style or genre of the scene (e.g., "western comic, colored pencil", "anime").
+        required: false
+      license:
+        type: string
+        description: License for the scene description or its generated content.
+        required: false
+      notes:
+        type: array
+        description: Additional free-form notes or specific instructions for the AI.
+        items: {type: string}
+        required: false
