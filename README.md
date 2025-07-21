@@ -8,6 +8,8 @@ PromptGenML is a lightweight, human- and machine-readable format for the structu
 
 PromptGenML is based on YAML ("Yet Another Markup Language") and is a semantic layer over simple prompts. It separates the description of a character or scene from the concrete request to the AI to generate an image or text.
 
+[Learn more →](./vision.md)
+
 ---
 
 ## Advantages
