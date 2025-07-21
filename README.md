@@ -82,7 +82,7 @@ A tool could automatically generate an image prompt from this data, such as:
 
 ## Responsibility
 
-When using generative AI in conjunction with PromptML, copyrights and personal rights must be observed. PromptML supports this by:
+When using generative AI in conjunction with PromptGenML, copyrights and personal rights must be observed. PromptGenML supports this by:
 
 - **Documenting the original idea** (e.g., using `notes:` and `version:`)
 - **Separating description and generation**: The YAML file is declarative, not executable
@@ -97,7 +97,7 @@ We recommend:
 
 ## Outlook
 
-PromptML is deliberately open and modular. Possible options include:
+PromptGenML is deliberately open and modular. Possible options include:
 
 - **Templates for roles, genres, or styles**
 - **Rating grids for coherence (e.g., clothing, color codes)**
