@@ -1,12 +1,12 @@
-# What is PromptML?
+# What is PromptGenML?
 
-PromptML is a lightweight, human- and machine-readable format for the structured description of characters, scenes, and context elements for generative AI applications. It is designed to enable repeatable, comprehensible, and shareable prompts—particularly in areas such as image generation, comic creation, learning materials, or interactive stories.
+PromptGenML is a lightweight, human- and machine-readable format for the structured description of characters, scenes, and context elements for generative AI applications. It is designed to enable repeatable, comprehensible, and shareable prompts—particularly in areas such as image generation, comic creation, learning materials, or interactive stories.
 
 ---
 
 ## Basic Idea
 
-PromptML is based on YAML ("Yet Another Markup Language") and is a semantic layer over simple prompts. It separates the description of a character or scene from the concrete request to the AI to generate an image or text.
+PromptGenML is based on YAML ("Yet Another Markup Language") and is a semantic layer over simple prompts. It separates the description of a character or scene from the concrete request to the AI to generate an image or text.
 
 ---
 
@@ -108,8 +108,8 @@ PromptML is deliberately open and modular. Possible options include:
 
 ## Conclusion
 
-PromptML isn't a new data format—it's a new perspective on creative prompting: structured, modular, transparent, and sustainable. It helps humans and machines **understand complexity**, **structure creativity**, and **collaboratively design reproducible content**.
+PromptGenML isn't a new data format—it's a new perspective on creative prompting: structured, modular, transparent, and sustainable. It helps humans and machines **understand complexity**, **structure creativity**, and **collaboratively design reproducible content**.
 
-PromptML not only strengthens creative self-work, but can also serve as a **bridging technology** – between free prompting and structured authoring systems.
+PromptGenML not only strengthens creative self-work, but can also serve as a **bridging technology** – between free prompting and structured authoring systems.
 
-PromptML itself is not intended as a commercial product, but rather as a tool for structured work with AI-generated content. 
+PromptGenML itself is not intended as a commercial product, but rather as a tool for structured work with AI-generated content. 
